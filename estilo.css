@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+body{
+    background-color: black;
+}
+.container-calc{
+    width: 543px;
+    height: 560px;
+    background: linear-gradient( to right, #6f1abd, #6a5fd9);
+    border-radius: 10px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container-result input{
+   margin: 15px;
+   padding: 20px;
+   width: 95%;
+   height: 90px;
+   text-align: right;
+   font-size: 35px;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 5px;
+   border: none;
+}
+
+.container-actions{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.container-actions input{
+    width: 90px;
+    height: 65px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 5px 0 purple;
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 5px;
+    border: 5px solid rgba( 255, 255, 255, 0.1 );
+    color: whitesmoke;
+}
+.container-actions :hover{
+    transition: 0.5s;
+    box-shadow:  1px 5px   violet;
+    color: black;
+    
+}

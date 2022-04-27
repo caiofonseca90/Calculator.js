@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora</title>
+
+    <script>
+        function limpar(){
+            document.getElementById('resultado').value = '';
+        }
+        
+        function concat(valor){
+            document.getElementById('resultado').value +=valor;
+        }
+        
+        function calcular(){
+            var resultado = 0;
+            resultado = document.getElementById('resultado').value;
+            document.getElementById('resultado').value = eval(resultado);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container-calc">
+        <h1>CALCULATOR</h1>
+        <div class="container-result">
+            <input type="text" id="resultado">
+        </div>
+        <div class="container-actions">
+            <input type="submit" value="0" onclick="concat(0);">
+            <input class="Cs" type="submit" value="C" onclick="limpar('C');">
+            <input class="operations"  type="submit" value="/" onclick="concat('/');">
+            <input class="operations" type="submit" value="*" onclick="concat('*');">
+            <input type="submit" value="7" onclick="concat(7);">
+            <input type="submit" value="8" onclick="concat(8);">
+            <input type="submit" value="9" onclick="concat(9);">
+            <input class="operations" type="submit" value="-" onclick="concat('-');">
+            <input type="submit" value="4" onclick="concat(4);">
+            <input type="submit" value="5" onclick="concat(5);">
+            <input type="submit" value="6" onclick="concat(6);">
+            <input class="operations" type="submit" value="+" onclick="concat('+');">
+            <input type="submit" value="1" onclick="concat(1);">
+            <input type="submit" value="2" onclick="concat(2);">
+            <input type="submit" value="3" onclick="concat(3);">
+            <input class="igual" type="submit" value="=" onclick="calcular();">
+        </div>
+    </div>
+
+</body>
+</html>
